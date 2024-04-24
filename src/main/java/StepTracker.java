@@ -2,11 +2,11 @@ import java.util.ArrayList;
 public class StepTracker
 {
  private ArrayList <Integer> myDailySteps;
- private int actDays;
+ private int active;
 
  public StepTracker(int steps){
    myDailySteps= new ArrayList <Integer>();
-  actDays= steps;
+  active= steps;
  }
  public void addDailySteps(int steps){
   myDailySteps.add(steps);
@@ -14,7 +14,7 @@ public class StepTracker
  public int activeDays(){
 int days=0;
   for(int i: myDailySteps)
-   if(i >= actDays)
+   if(i >= active)
     days++;
     return days;
    }
@@ -23,7 +23,7 @@ int days=0;
    return 0;
     double steps= 0;
   for(int i: myDailySteps)
-   steps= steps+s;
+   steps= steps+i;
   return steps/myDailySteps.size();
 }
 }
