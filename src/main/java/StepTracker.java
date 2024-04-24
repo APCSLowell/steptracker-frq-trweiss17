@@ -13,22 +13,18 @@ public class StepTracker
  }
  public int activeDays(){
 int days=0;
-  for(int i=0; i< dailySteps.size(); i++){
-   if(i >= actDays){
+  for(int i: dailySteps)
+   if(i >= actDays)
     days++;
     return days;
    }
-  }
- }
  public double averageSteps(){
-  if(dailySteps.size() ==0){
+  if(dailySteps.size() ==0)
    return 0;
-  }
     double steps= 0;
-  for(int j=0; j< dailySteps.size(); j++){
+  for(int i: dailySteps)
    steps= steps+s;
   return steps/dailySteps.size();
- }
 }
 }
                            
