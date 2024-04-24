@@ -21,8 +21,9 @@ int days=0;
   }
  }
  public double averageSteps(){
-  if(dailySteps.size() ==0)
-   return 0
+  if(dailySteps.size() ==0){
+   return 0;
+  }
     double steps= 0;
   for(int j=0; j< dailySteps.size(); j++){
    steps= steps+s;
