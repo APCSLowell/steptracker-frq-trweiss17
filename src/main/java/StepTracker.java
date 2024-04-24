@@ -18,7 +18,7 @@ public class StepTracker
   if(steps>= leastSteps)
    actDays++;
  }
- public int activeDays(actDays){
+ public int activeDays(){
 return actDays;
  }
  public double averageSteps(){
